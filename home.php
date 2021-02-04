@@ -1,3 +1,7 @@
+<?php
+    $dbh = new PDO('mysql:host=2eurhost.com;dbname=eurh_groupe5', $user, $pass);
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,8 +13,11 @@
 </head>
 
 <body>
-    <p> hello world </p>
-</body>
 
+    <div>
+        <h2> hello </h2>
+    </div>
+
+</body>
 </html>
 
