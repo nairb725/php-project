@@ -4,7 +4,7 @@
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="signIn.css">
 <title>eShop</title>
 </head>
 
@@ -19,15 +19,16 @@
                         Enter the email you signed up with</label>
                     <input type="email" placeholder="Email" />
                     <input type="submit" value="Submit" class="pass-reset-submit btn btn-success btn-sm" />
+                    
                 </div>
             </div>
             <div class="wrap">
                 <p class="form-title">
                     Sign In</p>
-                <form class="login">
-                <input type="text" placeholder="Username" />
-                <input type="password" placeholder="Password" />
-                <input type="submit" value="Sign In" class="btn btn-success btn-sm" />
+                <form action="signIn.php" class="login" method="post"> 
+                <input type="text" placeholder="Username" name="username" />
+                <input type="password" placeholder="Password" name="password"/>
+                <input type="submit" value="Log in" class="btn btn-success btn-sm" />
                 <div class="remember-forgot">
                     <div class="row">
                         <div class="col-md-6">
@@ -52,4 +53,3 @@
 </body>
 
 </html>
-
