@@ -14,7 +14,7 @@ try {
         if ($data[$i]["username"] == $username && $data[$i]["password"] == $password) {
             $dbh = null;
             $userdb = null;
-            header('Location: home.html');
+            header('Location: achat.php');
             exit(); 
 
         } else if ($i == sizeof($data) - 1) {

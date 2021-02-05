@@ -24,7 +24,7 @@ try {
             $stmt->execute();
             $usernameInput = null;
             $passwordInput = null;
-            header('Location: home.html');
+            header('Location: achat.php');
             exit();
         }        
     } 
