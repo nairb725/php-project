@@ -18,7 +18,7 @@ try {
             exit(); 
 
         } else if ($i == sizeof($data) - 1) {
-            header('Location: achat.php');
+            header('Location: logIn.php');
             exit();
         }
     } 

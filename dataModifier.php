@@ -13,9 +13,10 @@ class dataBasePDO {
     
     function request(string $SQLrequest) {
         $userdb = $this->userdb;
-        $stmt = $userdb->prepare(':request');
-        $stmt->bindParam(':request', $SQLrequest);
+        $stmt = $userdb->prepare($SQLrequest);
         $stmt->execute();
+        $data = $stmt -> fetchAll();
+        return $data;
     }
 
 //     public function addData($array, string $table) {
