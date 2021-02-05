@@ -40,7 +40,7 @@ try {
 <img src="/image/tortue.webp" alt="image" /><strong>PRIX DE LA PELUCHE TORTUE : 15E</strong> &nbsp&nbsp <button class="favorite styled"
         type="button"> Add to caddy </button>  </br>
 
-<img src="/image/cheshire.jpg" alt="image" /><strong>PRIX DE LA PELUCHE CHESHIRE : 35E</strong> &nbsp&nbsp <button class="favorite styled"
+<img src="/image/cheshire.jpg" alt="image" /><strong>PRIX DE LA SERVIETTE CHESHIRE : 35E</strong> &nbsp&nbsp <button class="favorite styled"
         type="button"> Add to caddy </button>  </br>
 
  </body>
