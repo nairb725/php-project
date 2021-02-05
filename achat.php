@@ -7,15 +7,19 @@ $host = "2eurhost.com";
 $dbName = 'eurh_groupe5';
 $dataBase = new dataBasePDO($user, $pass, $host, $dbName);
 $fetch = $dataBase -> request("SELECT nomProd, Prix FROM Produit WHERE Nprod = 1");
-// try {
-//     $dbh = new PDO('mysql:host=2eurhost.com;dbname=eurh_groupe5', $user, $pass);
-//     $userdb = $dbh->query('SELECT nomProd, Prix, catégorie password FROM Produit');
-//     $data = $userdb->fetchAll();
 
-// } catch (PDOException $e) {
-//     print "Erreur !: " . $e->getMessage() . "<br/>";
-//     die();
-// } 
+function FunctionName() {
+        echo "penis";
+        $dataBase->request("INSERT INTO panier (nomProd, nProd, categorie, prix) VALUES ()")
+}
+
+if (isset($_GET['hello'])) {
+        FunctionName();
+}
+if (isset($_GET['hello1'])) {
+        FunctionName1();
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -30,9 +34,8 @@ $fetch = $dataBase -> request("SELECT nomProd, Prix FROM Produit WHERE Nprod = 1
 <body>
 <h1>E-SHOP</h1> 
 
-
 <img src="/image/renard.webp" alt="image" /><strong><?php echo $fetch[0]["nomProd"]. $fetch[0]["Prix"]; ?></strong> &nbsp&nbsp <button class="favorite styled"
-        type="button"> Add to caddy </button> </br>
+        type="button" onclick="location.href='achat.php?hello=true'"> Add to caddy </button> </br>
 
 
 <img src="/image/shiba.webp" alt="image" /><strong>PRIX DE LA PELUCHE SHIBA : 20E</strong> &nbsp&nbsp <button class="favorite styled"
@@ -44,7 +47,7 @@ $fetch = $dataBase -> request("SELECT nomProd, Prix FROM Produit WHERE Nprod = 1
 <img src="/image/tortue.webp" alt="image" /><strong>PRIX DE LA PELUCHE TORTUE : 15E</strong> &nbsp&nbsp <button class="favorite styled"
         type="button"> Add to caddy </button>  </br>
 
-<img src="/image/cheshire.jpg" alt="image" /><strong>PRIX DE LA SERVIETTE CHESHIRE : 35E</strong> &nbsp&nbsp <button class="favorite styled"
+<img src="/image/cheshire.jpg" alt="image" /><strong>PRIX DE LA PELUCHE CHESHIRE : 35E</strong> &nbsp&nbsp <button class="favorite styled"
         type="button"> Add to caddy </button>  </br>
 
  </body>
