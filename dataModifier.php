@@ -19,6 +19,12 @@ class dataBasePDO {
         return $data;
     }
 
+    function request1(string $SQLrequest) {
+        $userdb = $this->userdb;
+        $stmt = $userdb->prepare($SQLrequest);
+        $stmt->execute();
+    }
+
 //     public function addData($array, string $table) {
 //         $userdb = $this->userdb;
 //         $userVariable = implode(',', array_keys($array));
