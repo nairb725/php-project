@@ -14,7 +14,7 @@ try {
         if ($data[$i]["username"] == $usernameInput) {
             $usernameInput = null;
             $passwordInput = null;
-            header('Location: signIn.html');
+            header('Location: achat.php');
             exit();
 
         } else if ($i == sizeof($data) - 1) {
