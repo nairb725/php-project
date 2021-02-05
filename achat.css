@@ -1,13 +1,37 @@
 h1{
-    text-align: center;
-    background-color: LightCoral;
-    font-size: 60px;
+    position: absolute; top: 20px; left: 550px;
+    font-size: 40px;
+    margin:none;
+    
 }
 
 h2{
     text-align: right;
+    margin:none;
+    background-color:lightcoral
 }
 
 .button {
     text-align: right;
+    position: absolute; top: 0px; right: 0px;
+}
+
+body{
+    
+    background-color: white;
+    margin:none;
+    border:none;
+}
+
+article{
+
+    background-color: white;
+    margin:none;
+    border:none;
+
+}
+
+header{
+
+    margin:none;
 }
